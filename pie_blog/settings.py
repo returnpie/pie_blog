@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrap3',
     'blog',
 ]
 
@@ -106,7 +107,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
@@ -119,6 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = Path.joinpath(BASE_DIR, 'static')
-
+STATIC_ROOT = Path.joinpath(BASE_DIR, 'blog/static')
+print(TEMPLATE_DIR)
+print(STATIC_ROOT)
 LOGIN_REDIRECT_URL = '/'
